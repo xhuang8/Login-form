@@ -76,3 +76,40 @@ span {
     margin-left: 30%;
     color: mediumblue;
 }
+
+/* show the message box when user click*/
+#passwordMessages {
+    display: none;
+    background: gainsboro;
+    color: black;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#passwordMessages p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* set the valid */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* set the invalid */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}

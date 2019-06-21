@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
-<body>
 
+
+
+<body>
 <h2>Login Form</h2>
 
+<div class="container">
 <form action="#" id="form-id" method="post" name="myform">
     <div class="imgCenter">
         <a href="#"><img src="IMG/login.png" alt="login" class="image"></a>
@@ -19,22 +21,31 @@
     <div class="labelContainer">
 
         <label for="email"><br>Email</br></label>
-        <input type="text" placeholder="Enter Email" id="email" name="email" required>
+        <input type="text" placeholder="Enter Email" id="email" name="email" pattern="^(.+)@(.+)$" required>
         <br>
 
-        <label for="password"><br>Password</br></label>
-        <input type="password" placeholder="Enter Password" id="password" name="password" required>
-        <br><br>
+        <label for="psw"><br>Password</br></label>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+               title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more
+               characters" required>
+        <br>
 
         <button type="submit" id="submit" value="Login" onclick="validation()">Login</button>
 
     </div>
 </form>
-<span>
-    <b class="note">Note: </b>For this test, use the following username and password.
-    <br />
-    <b class="test">Email: xxx123456@gmail.com<br /></b>
-    <b class="test">Password: 123456hhh</b>
-</span>
+</div>
+
+
+<div id="passwordMessages">
+    <h4>Password must contain the following: </h4>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+
+<script src="js/login.js"></script>
+
 </body>
 </html>

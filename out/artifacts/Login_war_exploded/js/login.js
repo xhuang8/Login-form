@@ -1,60 +1,71 @@
 //validations for email and password;
-var attemp  = 3;//this is for count number of attempts;
-//login function when users click;
-function validation() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
+var passwordInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
 
-    //invalid email setting.
-    var emailReg = "#" || "@" || "!" || "~" || "$" || "%" || "^" || "&" || "*"
-        || "/" || ">" || "<" || "(" || ")" || "{" || "}" || "[" || "]" || ";" || ":" || "'" || "." ||
-        "," || "-" || "_" || "+" || "=";
+passwordInput.onfocus = function ()
+{
+    document.getElementById("passwordMessages").style.display = "block";
+}
 
-    //the email should match the test one, then it is successful.
-    if(email == "xxx123456@gmail.com" && password == "123456hhh")
+passwordInput.onblur = function ()
+{
+    document.getElementById("passwordMessages").style.display = "none";
+}
+
+passwordInput.onkeyup = function () {
+    //validate lowercase letters
+    var lowerCaseLetters = /[a-z]/g;
+    if(passwordInput.value.match(lowerCaseLetters))
     {
-        alert("Login Successfully......");
-        window.location  = "success.html";
-        return false;
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+    }
+    else
+    {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
     }
 
-    //when user enter the empty email or password, then show alert.
-    else if(email === '' ||  password === '')
+    //validate capital letters
+    var upperCaseLetters = /[A-Z]/g;
+    if(passwordInput.value.match(upperCaseLetters))
     {
-        alert("Please fill out this fields.");
-        return false;
-        attempt --;
-        alert("You have left "+attempt+" attempt;");
-        if( attempt == 0) {
-            document.getElementById("username").disabled = true;
-            document.getElementById("password").disabled = true;
-            document.getElementById("submit").disabled = true;
-            return false;
-        }
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+    }
+    else
+    {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
     }
 
-    //
-    else if(!(email).match(emailReg))
+    //validate numbers
+    var numbers = /[0-9]/g;
+    if(passwordInput.value.match(numbers))
     {
-        alert("Invalid email.");
-        return false;
-        attempt --;
-        alert("You have left "+attempt+" attempt;");
-        if( attempt == 0) {
-            document.getElementById("username").disabled = true;
-            document.getElementById("password").disabled = true;
-            document.getElementById("submit").disabled = true;
-            return false;
-        }
+        number.classList.remove("invalid");
+        number.classList.add("valid");
     }
-    else {
-        attempt --;
-        alert("You have left "+attempt+" attempt;");
-        if( attempt == 0) {
-            document.getElementById("username").disabled = true;
-            document.getElementById("password").disabled = true;
-            document.getElementById("submit").disabled = true;
-            return false;
-        }
+    else
+    {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+    }
+
+    //validate length
+    if(passwordInput.value.length >= 8)
+    {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+    }
+    else
+    {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
     }
 }
+
+
