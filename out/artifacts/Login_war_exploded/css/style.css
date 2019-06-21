@@ -1,0 +1,78 @@
+/* body style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* form style*/
+form {
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 1px solid gainsboro;
+}
+
+/* h2 style */
+h2 {
+    text-align: center;
+    color: cadetblue;
+}
+
+/* set email and password input */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid dimgray;
+    box-sizing: border-box;
+}
+
+/* button style */
+button {
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* image style */
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+img.image {
+    width: 30%;
+    border-radius: 40%;
+}
+
+/* label style */
+.labelContainer {
+    padding: 16px;
+}
+
+/* span style */
+span {
+    text-align: center;
+    font-size: 10px;
+    margin-left: 30%;
+}
+
+/* note style */
+.note {
+    color: red;
+}
+
+.test {
+    margin-left: 30%;
+    color: mediumblue;
+}
