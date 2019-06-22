@@ -3,4 +3,6 @@
 Create a login form by using html/css/js and verify the email and password. The following are the requirements that must be completed:
 
 1. Add an avatar; add three lines of fields, one is email, one is password, one is password confirmation; finally there is a login button.
-2. The password must be in uppercase letters, a lowercase letter, a special character, and a minimum of 8 characters.
+2. The password must be in uppercase letters, a lowercase letter, a number, and a minimum of 8 characters. (this is validation for the password when user enter)
+3. The email should use standard email address with regex, and should have validation for email.
+4. Add  a submit button to authenticate the email and password.
