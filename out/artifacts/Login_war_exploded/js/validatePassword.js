@@ -1,20 +1,24 @@
-//validations for email and password;
+//validations for the password.
+//the password should have 8 characters, one uppercase, one lowercase, one number.
 var passwordInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
 
+//show the messages when user click the password field.
 passwordInput.onfocus = function ()
 {
     document.getElementById("passwordMessages").style.display = "block";
 }
 
+//hide the message when user click outside of the password field.
 passwordInput.onblur = function ()
 {
     document.getElementById("passwordMessages").style.display = "none";
 }
 
+//type something
 passwordInput.onkeyup = function () {
     //validate lowercase letters
     var lowerCaseLetters = /[a-z]/g;
