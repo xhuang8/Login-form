@@ -6,6 +6,7 @@ function validateEmail() {
     //var address =   document.forms[email_id].elements[email].value;
 
     if(atPosition < 1 || dotPosition < atPosition + 2 || dotPosition + 2 >= x.length) {
-        alert("Please enter a valid email address \n");
+        alert("Please enter a valid email address \n atPostion:"+atPosition+"\n dotPosition:"+dotPosition);
+        return false;
     }
 }

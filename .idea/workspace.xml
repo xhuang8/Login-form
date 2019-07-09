@@ -34,7 +34,7 @@
     <session id="1235097467">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
@@ -153,8 +153,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="72" />
-    <option name="y" value="243" />
+    <option name="x" value="87" />
+    <option name="y" value="164" />
     <option name="width" value="1244" />
     <option name="height" value="778" />
   </component>
@@ -303,12 +303,12 @@
       <updated>1560893664381</updated>
       <workItem from="1560893668510" duration="2425000" />
       <workItem from="1561064731345" duration="24947000" />
-      <workItem from="1562645194881" duration="1465000" />
+      <workItem from="1562645194881" duration="1556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28837000" />
+    <option name="totallyTimeSpent" value="28928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="243" width="1244" height="778" extended-state="0" />
