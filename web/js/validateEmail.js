@@ -9,4 +9,7 @@ function validateEmail() {
         alert("Please enter a valid email address \n atPostion:"+atPosition+"\n dotPosition:"+dotPosition);
         return false;
     }
+    else {
+        alert("You have valid email address");
+    }
 }

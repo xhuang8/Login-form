@@ -1,12 +1,15 @@
-function validateEmail(email_id, email) {
-    var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
-    var address =   document.forms[email_id].elements[email].value;
+function validateEmail() {
+    //var reg = /^([A-Za-z0-9_\-\.]){1,}\@([A-Za-z0-9_\-\.]){1,}\.([A-Za-z]{2,4})$/;
+    var x = document.myform.email.value;
+    var atPosition = x.indexOf("@");
+    var dotPosition = x.lastIndexOf(".");
+    //var address =   document.forms[email_id].elements[email].value;
 
-    if (reg.test(address) == false)
-    {
-        alert("Invalid Email Address. Please enter a valid one.");
-        document.forms[email_id].elements[email].focus();
-
+    if(atPosition < 1 || dotPosition < atPosition + 2 || dotPosition + 2 >= x.length) {
+        alert("Please enter a valid email address \n atPostion:"+atPosition+"\n dotPosition:"+dotPosition);
         return false;
+    }
+    else {
+        alert("You have valid email address");
     }
 }

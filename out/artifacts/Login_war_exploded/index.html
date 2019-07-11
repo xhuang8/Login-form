@@ -13,7 +13,8 @@
 <h2>Login Form</h2>
 
 <div class="container">
-<form action="#" id="form-id" method="post" name="myform">
+<form id="form-id" method="post" name="myform" action="#" onsubmit="return validateEmail();">
+
     <div class="imgCenter">
         <a href="#"><img src="IMG/login.png" alt="login" class="image"></a>
     </div>
@@ -21,6 +22,7 @@
     <div class="labelContainer">
 
 
+        <script src="js/validateEmail.js"></script>
         <label for="email"><br>Email</br></label>
         <input type="text" placeholder="Enter Email" id="email" name="email" required>
         <br>
@@ -34,6 +36,8 @@
         <button type="submit" id="submit" value="Login" onclick="validation()">Login</button>
 
     </div>
+
+
 </form>
 </div>
 
