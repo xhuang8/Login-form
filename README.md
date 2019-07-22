@@ -2,7 +2,7 @@
 ___________________________________________________________________________________________________________________________
 
 ## Create a login form by using html/css/js and verify the email and password.
-## The following are the requirements that must be completed:
+# The following are the requirements that must be completed:
 
 
 1. Add an avatar; add three lines of fields, one is email, one is password, one is password confirmation; finally there is a login button.
