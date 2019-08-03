@@ -99,7 +99,7 @@ span {
 
 .valid:before {
     position: relative;
-    left: -35px;
+    left: -30px;
     content: "✔";
 }
 
@@ -110,11 +110,11 @@ span {
 
 .invalid:before {
     position: relative;
-    left: -35px;
+    left: -30px;
     content: "✖";
 }
 
-div#emailMessages {
+/*#emailMessages {
     display: none;
     background: gainsboro;
     color: black;
@@ -123,7 +123,7 @@ div#emailMessages {
     margin-top: 10px;
 }
 
-div#emailMessages p {
+#emailMessages p {
     padding: 10px 35px;
     font-size: 18px;
-}
+}*/

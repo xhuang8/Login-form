@@ -30,7 +30,7 @@ emailInput.onkeyup = function () {
     }
 
     //validate after @
-    var afterC = /@[A-Z0-9.-]/g;
+    var afterC = /[A-Z0-9.-]/g;
     if(emailInput.value.match(afterC))
     {
         two.classList.remove("invalid");
@@ -43,7 +43,7 @@ emailInput.onkeyup = function () {
     }
 
     //validate .
-    var dotP = /.[A-Z]{2,}/g;
+    var dotP = /[A-Z]{2,4}/g;
     if(emailInput.value.match(dotP))
     {
         three.classList.remove("invalid");

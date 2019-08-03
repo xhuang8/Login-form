@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="UTF-8"/>
 </head>
 
 
@@ -13,7 +13,7 @@
 <h2>Login Form</h2>
 
 <div class="container">
-<form id="form-id" method="post" name="myform" action="#" onsubmit="return validateEmail();">
+<form id="form-id" method="post" name="myform" action="#">
 
     <div class="imgCenter">
         <a href="#"><img src="IMG/login.png" alt="login" class="image"></a>
@@ -22,10 +22,11 @@
     <div class="labelContainer">
 
 
-        <script src="js/validateEmail.js"></script>
         <label for="email"><br>Email</br></label>
-        <input type="text" placeholder="Enter Email" id="email" name="email" required>
+        <input type="text" placeholder="Enter Email" id="email" name="email" required pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}"
+               title="email validate">
         <br>
+
 
         <label for="psw"><br>Password</br></label>
         <input type="password" placeholder="Enter Password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
@@ -42,6 +43,14 @@
 </div>
 
 
+<div id="emailMessages" style="display: none; background: gainsboro; color: black; position: relative; padding: 20px; margin-top: 10px;">
+    <h4>Email must like this pattern: </h4>
+    <P id="one" class="invalid" style="padding: 10px 35px; font-size: 18px;">Before @ should at least have upper, lower, or number characters</P>
+    <p id="two" class="invalid" style="padding: 10px 35px; font-size: 18px;">After @ should at least have one upper, lower, or number characters</p>
+    <p id="three" class="invalid" style="padding: 10px 35px; font-size: 18px;">It should have "." after "@" </p>
+</div>
+<script src="js/validateEmail.js"></script>
+
 
 <div id="passwordMessages">
     <h4>Password must contain the following: </h4>
@@ -50,7 +59,6 @@
     <p id="number" class="invalid">A <b>number</b></p>
     <p id="length" class="invalid">Minimum <b>8 characters</b></p>
 </div>
-
 <script src="js/validatePassword.js"></script>
 
 </body>
