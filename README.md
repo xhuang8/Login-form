@@ -17,11 +17,11 @@ Note: It must have event trigger when user click the field of password.
 - [x] 4. Add a submit button to authenticate the email and password.
 
 
-## Image Walkthrough
+## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/CRszMTN' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/F7Ov5Ec.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
