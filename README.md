@@ -1,6 +1,7 @@
 # Login Form using HTML/CSS/JS #
 ___________________________________________________________________________________________________________________________
 
+
 ## Create a login form by using html/css/js and verify the email and password.
 ## The following are the requirements that must be completed:
 
@@ -13,7 +14,17 @@ Note: It must have event trigger when user click the field of email.
 - [x]  3. The email should use standard email address with regex: email id must contain the @ and . character,  there must be at least one character before and after the @., and there must be at least two characters after . (dot). This is validation for email  address. 
 Note: It must have event trigger when user click the field of password. 
 
-4. Add a submit button to authenticate the email and password.
+- [x] 4. Add a submit button to authenticate the email and password.
+
+
+## Image Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://imgur.com/CRszMTN' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
 ## License
 
