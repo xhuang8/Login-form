@@ -17,7 +17,7 @@ emailInput.onblur = function ()
 
 emailInput.onkeyup = function () {
     //validate before @
-    var beforeC = /[A-Z0-9._%+-]/g;
+    var beforeC = /[a-z0-9._%+-]/g;
     if(emailInput.value.match(beforeC))
     {
         one.classList.remove("invalid");
@@ -30,7 +30,7 @@ emailInput.onkeyup = function () {
     }
 
     //validate after @
-    var afterC = /[A-Z0-9.-]/g;
+    var afterC = /@[a-z0-9.-]/g;
     if(emailInput.value.match(afterC))
     {
         two.classList.remove("invalid");
@@ -43,7 +43,7 @@ emailInput.onkeyup = function () {
     }
 
     //validate .
-    var dotP = /[A-Z]{2,4}/g;
+    var dotP = /\.[a-z]{2,3}$/g;
     if(emailInput.value.match(dotP))
     {
         three.classList.remove("invalid");
